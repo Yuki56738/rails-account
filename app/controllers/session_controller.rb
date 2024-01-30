@@ -19,7 +19,7 @@ class SessionController < ApplicationController
       # @currentuser = user
       # @current_user = user
       # session[:currentuser] = user
-      redirect_to users_show_url
+      redirect_to '/mypage'
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
