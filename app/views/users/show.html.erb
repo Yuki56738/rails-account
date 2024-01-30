@@ -4,7 +4,7 @@
 <p>E-Mail: <%= session[:current_user]['email'] %></p>
 
 <p>
-  <%= form_for @user, url: {action: "destroy"}, method: :delete do |f| %>
+  <%= form_for @user, url: '/users/destroy', method: :delete do |f| %>
     <%= submit_tag 'アカウントを削除する' %>
   <% end %>
 </p>

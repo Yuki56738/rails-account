@@ -10,11 +10,9 @@ class SignupController < ApplicationController
       render :new
     end
   end
-  def show
-    @user = User.find(params[:email])
-  end
+
   def destroy
-    @user = User.find(params[:email])
+    @user = User.find_by(email: params[:email])
   end
 
   def destroy_params
