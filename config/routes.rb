@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/show'
   root 'top#index'
   get 'top', to: 'top#index'
   get 'signup', to: 'signup#new'
