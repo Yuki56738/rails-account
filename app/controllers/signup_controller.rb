@@ -11,7 +11,7 @@ class SignupController < ApplicationController
     end
   end
   def destroy
-    @user = current_user # 仮にcurrent_userメソッドが現在ログインしているユーザーを返すと仮定
+    @user = session[:current_user] # 仮にcurrent_userメソッドが現在ログインしているユーザーを返すと仮定
 
     if @user.destroy
       reset_session # ユーザーを削除した後はセッションをリセット
