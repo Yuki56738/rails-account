@@ -2,3 +2,9 @@
 
 <p>Welcome! <%= session[:current_user]['user_name'] %></p>
 <p>E-Mail: <%= session[:current_user]['email'] %></p>
+
+<p>
+  <%= form_for :current_user, url: {action: "destroy"}, method: :delete do |f| %>
+    <%= submit_tag 'アカウントを削除する' %>
+  <% end %>
+</p>
