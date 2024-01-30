@@ -1,0 +1,13 @@
+
+<h1>Hello, Rails!</h1>
+
+<h2>ユーザー一覧:</h2>
+<ul>
+  <% @users.each do |user| %>
+  <li>
+    <%= user.user_name %>
+  </li>
+  <% end %>
+</ul>
+
+<%=link_to "会員登録", signup_path %>
