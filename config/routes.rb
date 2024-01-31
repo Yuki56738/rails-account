@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   delete 'logout', to: 'session#destroy'
   get 'mypage', to: 'users#show'
   delete 'users/destroy', to: 'users#destroy'
-  get 'test_mail', to: 'user_mailer#test_mail'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
