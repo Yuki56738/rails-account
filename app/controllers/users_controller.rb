@@ -6,4 +6,5 @@ class UsersController < ApplicationController
     @user = User.find_by(user_name: session[:current_user]['user_name'])
     @user.destroy
   end
+
 end
